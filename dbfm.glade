@@ -1,0 +1,252 @@
+<?xml version="1.0"?>
+<glade-interface>
+  <!-- interface-requires gtk+ 2.16 -->
+  <!-- interface-naming-policy project-wide -->
+  <widget class="GtkWindow" id="mainWindow">
+    <property name="width_request">565</property>
+    <property name="height_request">280</property>
+    <property name="title" translatable="yes">DoubanFM</property>
+    <property name="resizable">False</property>
+    <property name="window_position">center</property>
+    <property name="urgency_hint">True</property>
+    <child>
+      <widget class="GtkLayout" id="layout1">
+        <property name="visible">True</property>
+        <child>
+          <widget class="GtkButton" id="nextButton">
+            <property name="width_request">50</property>
+            <property name="height_request">50</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="focus_on_click">False</property>
+          </widget>
+          <packing>
+            <property name="x">470</property>
+            <property name="y">220</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkImage" id="photo">
+            <property name="width_request">280</property>
+            <property name="height_request">280</property>
+            <property name="visible">True</property>
+            <property name="stock">gtk-network</property>
+          </widget>
+        </child>
+        <child>
+          <widget class="GtkLabel" id="songDetail2">
+            <property name="width_request">186</property>
+            <property name="height_request">72</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="wrap">True</property>
+          </widget>
+          <packing>
+            <property name="x">310</property>
+            <property name="y">65</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkLabel" id="songDetail">
+            <property name="width_request">232</property>
+            <property name="height_request">42</property>
+            <property name="visible">True</property>
+            <property name="sensitive">False</property>
+            <property name="wrap">True</property>
+            <property name="max_width_chars">1</property>
+          </widget>
+          <packing>
+            <property name="x">289</property>
+            <property name="y">30</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkProgressBar" id="PlayProgress">
+            <property name="width_request">250</property>
+            <property name="height_request">5</property>
+            <property name="visible">True</property>
+          </widget>
+          <packing>
+            <property name="x">290</property>
+            <property name="y">205</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="delButton">
+            <property name="width_request">50</property>
+            <property name="height_request">50</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+          </widget>
+          <packing>
+            <property name="x">350</property>
+            <property name="y">220</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="likeButton">
+            <property name="width_request">50</property>
+            <property name="height_request">50</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+          </widget>
+          <packing>
+            <property name="x">290</property>
+            <property name="y">220</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="pauseButto">
+            <property name="width_request">50</property>
+            <property name="height_request">50</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="receives_default">True</property>
+          </widget>
+          <packing>
+            <property name="x">410</property>
+            <property name="y">220</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkLabel" id="passTime">
+            <property name="width_request">60</property>
+            <property name="height_request">20</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">00:00</property>
+          </widget>
+          <packing>
+            <property name="x">280</property>
+            <property name="y">180</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkLabel" id="totalTime">
+            <property name="width_request">60</property>
+            <property name="height_request">15</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">00:00</property>
+          </widget>
+          <packing>
+            <property name="x">490</property>
+            <property name="y">180</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="volBtn">
+            <property name="width_request">30</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="tooltip" translatable="yes">&#x8C03;&#x8282;&#x97F3;&#x91CF;</property>
+          </widget>
+          <packing>
+            <property name="x">470</property>
+            <property name="y">170</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="Menu">
+            <property name="width_request">35</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="receives_default">True</property>
+            <property name="relief">none</property>
+            <property name="focus_on_click">False</property>
+            <property name="image_position">bottom</property>
+          </widget>
+          <packing>
+            <property name="x">520</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="Login">
+            <property name="width_request">35</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="receives_default">True</property>
+            <property name="tooltip" translatable="yes">&#x767B;&#x9646;</property>
+            <property name="use_action_appearance">True</property>
+          </widget>
+          <packing>
+            <property name="x">520</property>
+            <property name="y">70</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="Channel">
+            <property name="width_request">35</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="receives_default">True</property>
+            <property name="focus_on_click">False</property>
+          </widget>
+          <packing>
+            <property name="x">520</property>
+            <property name="y">35</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="Settings">
+            <property name="width_request">35</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="focus_on_click">False</property>
+          </widget>
+          <packing>
+            <property name="x">520</property>
+            <property name="y">105</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="About">
+            <property name="width_request">35</property>
+            <property name="height_request">35</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="focus_on_click">False</property>
+          </widget>
+          <packing>
+            <property name="x">520</property>
+            <property name="y">140</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkLabel" id="channel">
+            <property name="width_request">100</property>
+            <property name="height_request">31</property>
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">&#x9891;&#x9053;</property>
+          </widget>
+          <packing>
+            <property name="x">283</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="GtkButton" id="search">
+            <property name="width_request">30</property>
+            <property name="height_request">30</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="tooltip" translatable="yes">&#x67E5;&#x770B;&#x4E13;&#x8F91;</property>
+          </widget>
+          <packing>
+            <property name="x">440</property>
+            <property name="y">170</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</glade-interface>
